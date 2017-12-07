@@ -4,9 +4,9 @@ module.exports = db => {
     email: db.type.string(),
     preferredcourse: db.type.string(),
     codingexperience: db.type.string(),
-    lastname: db.type.string().required(),
-    firstname: db.type.string().required(),
-    overEighteen: db.type.string().required(),
+    lastname: db.type.string(),
+    firstname: db.type.string(),
+    overEighteen: db.type.string(),
     address: db.type.object().schema({
       zip: db.type.number(),
       city: db.type.string(),

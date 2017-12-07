@@ -8,9 +8,10 @@ class Router extends Component {
     return (
       <BrowserRouter>
         <div>
+          <Route exact path={"/"} component={ApplicantForm.Home} />
           <Route
             exact
-            path={"/general-info"}
+            path={"/general-info/:applicantId"}
             component={ApplicantForm.GeneralInfo}
           />
           <Route
