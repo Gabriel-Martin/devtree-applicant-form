@@ -15,17 +15,17 @@ class Router extends Component {
           />
           <Route
             exact
-            path={"/work-history"}
+            path={"/work-history/:applicantId"}
             component={ApplicantForm.WorkHistory}
           />
           <Route
             exact
-            path={"/education"}
+            path={"/education/:applicantId"}
             component={ApplicantForm.Education}
           />
           <Route
             exact
-            path={"/course-info"}
+            path={"/course-info/:applicantId"}
             component={ApplicantForm.CourseInfo}
           />
         </div>
