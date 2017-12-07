@@ -26,7 +26,10 @@ class Education extends Component {
   inputChange = changeE => {
     let name = changeE.target.name;
     let value = changeE.target.value;
+
     changeE.persist();
+
+    let education = { ...education, [name]: value };
 
     this.setState(state => {
       return {
@@ -44,7 +47,6 @@ class Education extends Component {
 
   render() {
     let { applicant } = this.state;
-    console.log(this.state);
     return (
       <div>
         <form onSubmit={this.formSubmit}>

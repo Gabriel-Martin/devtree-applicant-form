@@ -5,8 +5,17 @@ class CourseInfo extends Component {
     return (
       <div>
         <form>
-          <input type="text" placeholder={"Preferred course dates"} />
-          <input type="textarea" placeholder={"Coding Experience"} />
+          <label htmlFor="" />
+          <input
+            name={"courseDates"}
+            type="text"
+            placeholder={"Preferred course dates"}
+          />
+          <input
+            name={"courseDates"}
+            type="textarea"
+            placeholder={"Coding Experience"}
+          />
           <input type="submit" />
         </form>
       </div>

@@ -1,18 +1,30 @@
 import React, { Component } from "react";
 
+import applicantCrud from "../../crud";
+
 class GeneralInfo extends Component {
   constructor() {
     super();
 
     this.state = {
       applicant: {
+        overEighteen: false,
         address: {}
       }
     };
   }
 
+  submitApplicant = () => {
+    let { applicant } = this.state;
+    applicantCrud.create(applicant).then(res => {
+      console.log(res);
+    });
+  };
+
   formSubmit = submitE => {
     submitE.preventDefault();
+
+    this.submitApplicant();
   };
 
   inputChange = changeE => {
@@ -119,6 +131,25 @@ class GeneralInfo extends Component {
             placeholder={"Email"}
             onChange={this.inputChange}
           />
+          <br />
+          <label htmlFor="overeighteen">
+            Are you 18 years of age or older?{" "}
+          </label>
+          <input
+            checked
+            value={false}
+            type={"radio"}
+            name={"overEighteen"}
+            onChange={this.inputChange}
+          />{" "}
+          Yes
+          <input
+            value={true}
+            type={"radio"}
+            name={"overEighteen"}
+            onChange={this.inputChange}
+          />{" "}
+          No
           <br />
           <input type={"submit"} />
         </form>
