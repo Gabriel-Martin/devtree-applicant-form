@@ -67,6 +67,7 @@ class CourseInfo extends Component {
           <br />
           <textarea
             onChange={this.inputChange}
+            value={applicant.codingexperience}
             name={"codingexperience"}
             type={"text"}
             rows={5}
