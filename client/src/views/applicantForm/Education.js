@@ -1,16 +1,26 @@
 import React, { Component } from "react";
-
+import applicantCrud from "../../crud";
 class Education extends Component {
   constructor() {
     super();
 
     this.state = {
-      applicant: {}
+      applicant: {
+        education: []
+      }
     };
   }
 
   formSubmit = submitE => {
+    let { applicant } = this.state;
     submitE.preventDefault();
+    applicantCrud.update(applicant.id).then(data => {
+      this.setState(state => {
+        return {
+          applicant: applicant
+        };
+      });
+    });
   };
 
   inputChange = changeE => {
@@ -21,8 +31,12 @@ class Education extends Component {
     this.setState(state => {
       return {
         applicant: {
-          ...state.applicant,
-          [name]: value
+          education: [
+            {
+              ...state.applicant.education[0],
+              [name]: value
+            }
+          ]
         }
       };
     });
@@ -30,6 +44,7 @@ class Education extends Component {
 
   render() {
     let { applicant } = this.state;
+    console.log(this.state);
     return (
       <div>
         <form onSubmit={this.formSubmit}>
