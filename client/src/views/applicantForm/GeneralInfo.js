@@ -5,7 +5,9 @@ class GeneralInfo extends Component {
     super();
 
     this.state = {
-      applicant: {}
+      applicant: {
+        address: {}
+      }
     };
   }
 
@@ -14,74 +16,111 @@ class GeneralInfo extends Component {
   };
 
   inputChange = changeE => {
-    let name = changeE.target.name;
-    let value = changeE.target.value;
     changeE.persist();
 
-    this.setState(state => {
-      return {
-        applicant: {
-          ...state.applicant,
-          [name]: value
-        }
-      };
-    });
+    let name = changeE.target.name;
+    let value = changeE.target.value;
+
+    if (
+      name === "email" ||
+      name === "phone" ||
+      name === "lastname" ||
+      name === "firstname"
+    ) {
+      this.setState(state => {
+        return {
+          applicant: {
+            ...state.applicant,
+            [name]: value
+          }
+        };
+      });
+    } else {
+      this.setState(state => {
+        return {
+          applicant: {
+            ...state.applicant,
+            address: {
+              ...state.applicant.address,
+              [name]: value
+            }
+          }
+        };
+      });
+    }
   };
 
   render() {
     let { applicant } = this.state;
+
     return (
       <div>
         <form onSubmit={this.formSubmit}>
+          <label htmlFor="firstname">firstname: </label>
           <input
-            type="text"
+            type={"text"}
             name={"firstname"}
             placeholder={"First Name"}
             onChange={this.inputChange}
           />
+          <br />
+          <label htmlFor="lastname">lastname: </label>
           <input
-            type="text"
+            type={"text"}
             name={"lastname"}
             placeholder={"Last Name"}
             onChange={this.inputChange}
           />
+          <br />
+          <label htmlFor="street">street: </label>
           <input
-            type="text"
+            type={"text"}
             name={"street"}
             placeholder={"Street Name"}
             onChange={this.inputChange}
           />
+          <br />
+          <label htmlFor="city">city: </label>
           <input
-            type="text"
+            type={"text"}
             name={"city"}
             placeholder={"City"}
             onChange={this.inputChange}
           />
+          <br />
+          <label htmlFor="state">state: </label>
           <input
-            type="text"
+            type={"text"}
             name={"state"}
             placeholder={"State"}
             onChange={this.inputChange}
           />
+          <br />
+          <label htmlFor="zip">zip: </label>
           <input
-            type="number"
+            type={"number"}
             name={"zip"}
             placeholder={"Zip Code"}
             onChange={this.inputChange}
           />
+          <br />
+          <label htmlFor="phone">phone: </label>
           <input
-            type="tel"
+            type={"tel"}
             name={"phone"}
             placeholder={"***-***-****"}
             onChange={this.inputChange}
           />
+          <br />
+          <label htmlFor="email">email: </label>
           <input
-            type="email"
+            type={"email"}
             name={"email"}
             placeholder={"Email"}
             onChange={this.inputChange}
           />
-          <input type="submit" />
+          <br />
+          <input type={"submit"} />
         </form>
       </div>
     );
