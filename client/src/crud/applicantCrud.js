@@ -8,7 +8,7 @@ const create = data => {
       "Content-Type": "application/json"
     }
   })
-    .then(resonse => response.json())
+    .then(response => response.json())
     .catch(error => console.log(error));
 };
 
@@ -20,7 +20,7 @@ const getById = id => {
       "Content-Type": "application/json"
     }
   })
-    .then(resonse => response.json())
+    .then(response => response.json())
     .catch(error => console.log(error));
 };
 
@@ -32,7 +32,7 @@ const update = (id, data) => {
       "Content-Type": "application/json"
     }
   })
-    .then(resonse => response.json())
+    .then(response => response.json())
     .catch(error => console.log(error));
 };
 

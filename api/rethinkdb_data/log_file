@@ -83,3 +83,17 @@
 2017-12-07T08:07:46.192098000 0.124652s notice: Server ready, "MacAttack_local_98v" ef374e55-8efc-4e8f-817d-3c0f2355596e
 2017-12-07T08:07:48.035891000 1.968443s info: Table adadec2a-a62c-4dc7-ab5a-c8cbbba07821: Starting a new Raft election for term 5.
 2017-12-07T08:07:48.075652000 2.008204s info: Table adadec2a-a62c-4dc7-ab5a-c8cbbba07821: This server is Raft leader for term 5. Latest log index is 12.
+2017-12-07T09:18:44.726374000 0.055992s notice: Running rethinkdb 2.3.6 (CLANG 8.1.0 (clang-802.0.42))...
+2017-12-07T09:18:44.731826000 0.061440s notice: Running on Darwin 17.2.0 x86_64
+2017-12-07T09:18:44.731890000 0.061504s notice: Loading data from directory /Users/digitalimm0rtal/Documents/DevtreeConsulting/Devtree-Student-Application-Forms/api/rethinkdb_data
+2017-12-07T09:18:44.771234000 0.100849s info: Automatically using cache size of 103 MB
+2017-12-07T09:18:44.771723000 0.101338s notice: Listening for intracluster connections on port 29015
+2017-12-07T09:18:44.794168000 0.123783s notice: Listening for client driver connections on port 28015
+2017-12-07T09:18:44.794298000 0.123913s notice: Listening for administrative HTTP connections on port 8080
+2017-12-07T09:18:44.794301000 0.123916s notice: Listening on cluster addresses: 127.0.0.1, ::1
+2017-12-07T09:18:44.794396000 0.124012s notice: Listening on driver addresses: 127.0.0.1, ::1
+2017-12-07T09:18:44.794399000 0.124014s notice: Listening on http addresses: 127.0.0.1, ::1
+2017-12-07T09:18:44.794401000 0.124016s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2017-12-07T09:18:44.794411000 0.124027s notice: Server ready, "MacAttack_local_98v" ef374e55-8efc-4e8f-817d-3c0f2355596e
+2017-12-07T09:18:45.965937000 1.295589s info: Table adadec2a-a62c-4dc7-ab5a-c8cbbba07821: Starting a new Raft election for term 6.
+2017-12-07T09:18:45.986981000 1.316633s info: Table adadec2a-a62c-4dc7-ab5a-c8cbbba07821: This server is Raft leader for term 6. Latest log index is 15.

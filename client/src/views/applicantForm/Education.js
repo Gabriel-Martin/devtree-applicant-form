@@ -5,7 +5,9 @@ class Education extends Component {
     super();
 
     this.state = {
-      applicant: {}
+      applicant: {
+        education: []
+      }
     };
   }
 
@@ -16,13 +18,16 @@ class Education extends Component {
   inputChange = changeE => {
     let name = changeE.target.name;
     let value = changeE.target.value;
+
     changeE.persist();
+
+    let education = { ...education, [name]: value };
 
     this.setState(state => {
       return {
         applicant: {
           ...state.applicant,
-          [name]: value
+          education: [education]
         }
       };
     });
@@ -30,6 +35,7 @@ class Education extends Component {
 
   render() {
     let { applicant } = this.state;
+    console.log(applicant);
     return (
       <div>
         <form onSubmit={this.formSubmit}>
