@@ -54,3 +54,18 @@
 2017-12-06T11:46:36.100801000 0.056392s notice: Server ready, "MacAttack_local_98v" ef374e55-8efc-4e8f-817d-3c0f2355596e
 2017-12-06T11:46:37.805195000 1.760821s info: Table adadec2a-a62c-4dc7-ab5a-c8cbbba07821: Starting a new Raft election for term 3.
 2017-12-06T11:46:37.821590000 1.777216s info: Table adadec2a-a62c-4dc7-ab5a-c8cbbba07821: This server is Raft leader for term 3. Latest log index is 6.
+2017-12-06T16:39:01.282205000 0.032054s notice: Recursively removing directory /Users/calvinhobbes/Documents/Devtree/dec517/devtree-applicant-form/api/rethinkdb_data/tmp
+2017-12-06T16:39:01.284844000 0.034696s notice: Running rethinkdb 2.3.6 (CLANG 8.1.0 (clang-802.0.42))...
+2017-12-06T16:39:01.290897000 0.040745s notice: Running on Darwin 17.2.0 x86_64
+2017-12-06T16:39:01.290965000 0.040812s notice: Loading data from directory /Users/calvinhobbes/Documents/Devtree/dec517/devtree-applicant-form/api/rethinkdb_data
+2017-12-06T16:39:01.336294000 0.086141s info: Automatically using cache size of 1339 MB
+2017-12-06T16:39:01.337135000 0.086982s notice: Listening for intracluster connections on port 29015
+2017-12-06T16:39:01.357277000 0.107122s notice: Listening for client driver connections on port 28015
+2017-12-06T16:39:01.357511000 0.107356s notice: Listening for administrative HTTP connections on port 8080
+2017-12-06T16:39:01.357514000 0.107359s notice: Listening on cluster addresses: 127.0.0.1, ::1
+2017-12-06T16:39:01.357516000 0.107361s notice: Listening on driver addresses: 127.0.0.1, ::1
+2017-12-06T16:39:01.357517000 0.107362s notice: Listening on http addresses: 127.0.0.1, ::1
+2017-12-06T16:39:01.357830000 0.107675s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2017-12-06T16:39:01.357885000 0.107730s notice: Server ready, "MacAttack_local_98v" ef374e55-8efc-4e8f-817d-3c0f2355596e
+2017-12-06T16:39:02.584373000 1.334177s info: Table adadec2a-a62c-4dc7-ab5a-c8cbbba07821: Starting a new Raft election for term 4.
+2017-12-06T16:39:02.614427000 1.364229s info: Table adadec2a-a62c-4dc7-ab5a-c8cbbba07821: This server is Raft leader for term 4. Latest log index is 9.

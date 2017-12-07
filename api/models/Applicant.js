@@ -17,7 +17,10 @@ module.exports = db => {
         end: db.type.string(),
         start: db.type.string(),
         phone: db.type.string(),
-        address: db.type.string(),
+        zip: db.type.number(),
+        city: db.type.string(),
+        state: db.type.string(),
+        street: db.type.string(),
         company: db.type.string(),
         position: db.type.string()
       })
