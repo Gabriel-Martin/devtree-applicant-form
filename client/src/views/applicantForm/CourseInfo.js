@@ -1,6 +1,12 @@
 import React, { Component } from "react";
 
 class CourseInfo extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {};
+  }
+
   render() {
     return (
       <div>
