@@ -6,7 +6,7 @@ module.exports = db => {
     codingexperience: db.type.string(),
     lastname: db.type.string().required(),
     firstname: db.type.string().required(),
-    overEighteen: db.type.boolean().required(),
+    overEighteen: db.type.string().required(),
     address: db.type.object().schema({
       zip: db.type.number(),
       city: db.type.string(),

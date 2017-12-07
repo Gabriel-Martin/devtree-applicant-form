@@ -8,7 +8,6 @@ class GeneralInfo extends Component {
 
     this.state = {
       applicant: {
-        overEighteen: false,
         address: {}
       }
     };
@@ -17,7 +16,7 @@ class GeneralInfo extends Component {
   submitApplicant = () => {
     let { applicant } = this.state;
     applicantCrud.create(applicant).then(res => {
-      console.log(res);
+      this.props.history.push(`/education/${res.id}`);
     });
   };
 
@@ -37,6 +36,7 @@ class GeneralInfo extends Component {
       name === "email" ||
       name === "phone" ||
       name === "lastname" ||
+      name === "overEighteen" ||
       name === "firstname"
     ) {
       this.setState(state => {
@@ -64,6 +64,7 @@ class GeneralInfo extends Component {
 
   render() {
     let { applicant } = this.state;
+    console.log(applicant);
 
     return (
       <div>
@@ -136,15 +137,14 @@ class GeneralInfo extends Component {
             Are you 18 years of age or older?{" "}
           </label>
           <input
-            checked
-            value={false}
+            value={"true"}
             type={"radio"}
             name={"overEighteen"}
             onChange={this.inputChange}
           />{" "}
           Yes
           <input
-            value={true}
+            value={"false"}
             type={"radio"}
             name={"overEighteen"}
             onChange={this.inputChange}

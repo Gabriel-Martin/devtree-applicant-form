@@ -97,3 +97,24 @@
 2017-12-07T09:18:44.794411000 0.124027s notice: Server ready, "MacAttack_local_98v" ef374e55-8efc-4e8f-817d-3c0f2355596e
 2017-12-07T09:18:45.965937000 1.295589s info: Table adadec2a-a62c-4dc7-ab5a-c8cbbba07821: Starting a new Raft election for term 6.
 2017-12-07T09:18:45.986981000 1.316633s info: Table adadec2a-a62c-4dc7-ab5a-c8cbbba07821: This server is Raft leader for term 6. Latest log index is 15.
+2017-12-07T11:48:59.783783000 8266.406449s notice: Server got SIGINT from pid 342, uid 501; shutting down...
+2017-12-07T11:48:59.783897000 8266.406563s notice: Shutting down client connections...
+2017-12-07T11:48:59.784116000 8266.406782s notice: All client connections closed.
+2017-12-07T11:48:59.784123000 8266.406789s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2017-12-07T11:48:59.790648000 8266.413314s notice: Storage engine shut down.
+2017-12-07T11:49:00.799931000 0.019788s notice: Running rethinkdb 2.3.6 (CLANG 8.1.0 (clang-802.0.42))...
+2017-12-07T11:49:00.806650000 0.026495s notice: Running on Darwin 17.2.0 x86_64
+2017-12-07T11:49:00.806714000 0.026557s notice: Loading data from directory /Users/digitalimm0rtal/Documents/DevtreeConsulting/Devtree-Student-Application-Forms/api/rethinkdb_data
+2017-12-07T11:49:00.839648000 0.059493s info: Automatically using cache size of 100 MB
+2017-12-07T11:49:00.839658000 0.059502s warn: Cache size does not leave much memory for server and query overhead (available memory: 890 MB).
+2017-12-07T11:49:00.839665000 0.059509s warn: Cache size is very low and may impact performance.
+2017-12-07T11:49:00.840447000 0.060291s notice: Listening for intracluster connections on port 29015
+2017-12-07T11:49:00.856677000 0.076522s notice: Listening for client driver connections on port 28015
+2017-12-07T11:49:00.856838000 0.076683s notice: Listening for administrative HTTP connections on port 8080
+2017-12-07T11:49:00.856840000 0.076684s notice: Listening on cluster addresses: 127.0.0.1, ::1
+2017-12-07T11:49:00.856842000 0.076686s notice: Listening on driver addresses: 127.0.0.1, ::1
+2017-12-07T11:49:00.856843000 0.076688s notice: Listening on http addresses: 127.0.0.1, ::1
+2017-12-07T11:49:00.856933000 0.076778s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2017-12-07T11:49:00.856936000 0.076780s notice: Server ready, "MacAttack_local_98v" ef374e55-8efc-4e8f-817d-3c0f2355596e
+2017-12-07T11:49:02.516145000 1.736026s info: Table adadec2a-a62c-4dc7-ab5a-c8cbbba07821: Starting a new Raft election for term 7.
+2017-12-07T11:49:02.533340000 1.753222s info: Table adadec2a-a62c-4dc7-ab5a-c8cbbba07821: This server is Raft leader for term 7. Latest log index is 18.
