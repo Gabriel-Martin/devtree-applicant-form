@@ -47,6 +47,7 @@ class Education extends Component {
 
   render() {
     let { applicant } = this.state;
+    console.log(this.state);
     return (
       <div>
         <form onSubmit={this.formSubmit}>
