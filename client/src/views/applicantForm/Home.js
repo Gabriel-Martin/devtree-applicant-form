@@ -11,7 +11,7 @@ class Home extends Component {
   render() {
     return (
       <div>
-        <button onClick={this.apply}>Apply For Classes!!!!!!!!!!</button>
+        <button onClick={this.apply}>Apply For Classes!</button>
       </div>
     );
   }
