@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import applicantCrud from "../../crud";
 
+import { Label, Select, TextArea } from "../../components";
+
 class CourseInfo extends Component {
   constructor(props) {
     super(props);
@@ -63,25 +65,18 @@ class CourseInfo extends Component {
     return (
       <div>
         <form onSubmit={this.formSubmit}>
-          <label htmlFor="codingexperience">Coding Experience: </label>
+          <Label for="codingexperience" text={"Coding Experience"} />
           <br />
-          <textarea
+          <TextArea
+            name={"codingexperience"}
             onChange={this.inputChange}
             value={applicant.codingexperience}
-            name={"codingexperience"}
-            type={"text"}
-            rows={5}
-            columns={20}
             placeholder={"Coding Experience"}
           />
           <br />
-          <label htmlFor="courseDates">Preferred Course: </label>
+          <Label for="courseDates" text={"Preferred Course:"} />
           <br />
-          <select onChange={this.inputChange} name={"preferredcourse"}>
-            <option value={"12-12-12"}>12-12-12</option>
-            <option value={"1-1-1"}>1-1-1</option>
-            <option value={"2-2-2"}>2-2-2</option>
-          </select>
+          <Select onChange={this.inputChange} name={"preferredcourse"} />
           <br />
 
           <input type={"submit"} />

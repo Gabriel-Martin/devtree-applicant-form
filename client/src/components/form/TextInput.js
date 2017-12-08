@@ -1,8 +1,12 @@
 import React from "react";
 
 const styles = {
-  border: "5px dashed purple",
-  width: "800px"
+  border: "1px solid magenta",
+  padding: "10px",
+  margin: "10px",
+  width: "800px",
+  borderRadius: "10px",
+  boxShadow: "0px 0px 12px 2px lightblue"
 };
 
 const TextInput = props => {
