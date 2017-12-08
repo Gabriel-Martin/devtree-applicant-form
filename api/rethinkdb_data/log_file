@@ -118,3 +118,17 @@
 2017-12-07T11:49:00.856936000 0.076780s notice: Server ready, "MacAttack_local_98v" ef374e55-8efc-4e8f-817d-3c0f2355596e
 2017-12-07T11:49:02.516145000 1.736026s info: Table adadec2a-a62c-4dc7-ab5a-c8cbbba07821: Starting a new Raft election for term 7.
 2017-12-07T11:49:02.533340000 1.753222s info: Table adadec2a-a62c-4dc7-ab5a-c8cbbba07821: This server is Raft leader for term 7. Latest log index is 18.
+2017-12-08T07:58:49.937792000 0.036414s notice: Running rethinkdb 2.3.6 (CLANG 8.1.0 (clang-802.0.42))...
+2017-12-08T07:58:49.942996000 0.041613s notice: Running on Darwin 17.2.0 x86_64
+2017-12-08T07:58:49.943086000 0.041701s notice: Loading data from directory /Users/calvinhobbes/Documents/Devtree/dec517/devtree-applicant-form/api/rethinkdb_data
+2017-12-08T07:58:50.020031000 0.118647s info: Automatically using cache size of 2159 MB
+2017-12-08T07:58:50.020750000 0.119366s notice: Listening for intracluster connections on port 29015
+2017-12-08T07:58:50.047486000 0.146102s notice: Listening for client driver connections on port 28015
+2017-12-08T07:58:50.047764000 0.146380s notice: Listening for administrative HTTP connections on port 8080
+2017-12-08T07:58:50.047768000 0.146383s notice: Listening on cluster addresses: 127.0.0.1, ::1
+2017-12-08T07:58:50.047770000 0.146385s notice: Listening on driver addresses: 127.0.0.1, ::1
+2017-12-08T07:58:50.047772000 0.146387s notice: Listening on http addresses: 127.0.0.1, ::1
+2017-12-08T07:58:50.047932000 0.146548s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2017-12-08T07:58:50.047935000 0.146551s notice: Server ready, "MacAttack_local_98v" ef374e55-8efc-4e8f-817d-3c0f2355596e
+2017-12-08T07:58:51.901201000 1.999815s info: Table adadec2a-a62c-4dc7-ab5a-c8cbbba07821: Starting a new Raft election for term 8.
+2017-12-08T07:58:51.973216000 2.071830s info: Table adadec2a-a62c-4dc7-ab5a-c8cbbba07821: This server is Raft leader for term 8. Latest log index is 21.
