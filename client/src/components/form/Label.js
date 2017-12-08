@@ -1,7 +1,7 @@
 import React from "react";
 
-const componentName = () => {
+const Label = () => {
   return <div />;
 };
 
-export default componentName;
+export default Label;

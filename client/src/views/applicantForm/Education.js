@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import applicantCrud from "../../crud";
 
+import { Label } from "../../components";
+
 import { set } from "lodash";
 
 class Education extends Component {
@@ -124,6 +126,8 @@ class Education extends Component {
             onChange={this.inputChange}
           />
         </form>
+
+        <Label />
 
         <form onSubmit={this.formSubmit}>
           <input
