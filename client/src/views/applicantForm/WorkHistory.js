@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import applicantCrud from "../../crud";
 import { set } from "lodash";
-
+import { SubmitButton, TextInput, Label } from "../../components";
 class WorkHistory extends Component {
   constructor() {
     super();
@@ -64,6 +64,7 @@ class WorkHistory extends Component {
     return (
       <div>
         <form onSubmit={this.formSubmit}>
+          <Label>haha nigga</Label>
           <input
             value={applicant.workHistory && applicant.workHistory[0].company}
             type="text"
@@ -71,6 +72,7 @@ class WorkHistory extends Component {
             placeholder={"Company"}
             onChange={this.inputChange}
           />
+          <Label>haha nigga</Label>
           <input
             value={applicant.workHistory && applicant.workHistory[0].street}
             type="text"
@@ -78,6 +80,7 @@ class WorkHistory extends Component {
             placeholder={"Street"}
             onChange={this.inputChange}
           />
+          <Label>haha nigga</Label>
           <input
             value={applicant.workHistory && applicant.workHistory[0].city}
             type="text"
@@ -85,6 +88,7 @@ class WorkHistory extends Component {
             placeholder={"City"}
             onChange={this.inputChange}
           />
+          <Label>haha nigga</Label>
           <input
             value={applicant.workHistory && applicant.workHistory[0].state}
             type="text"
@@ -92,6 +96,7 @@ class WorkHistory extends Component {
             placeholder={"State"}
             onChange={this.inputChange}
           />
+          <Label>haha nigga</Label>
           <input
             value={applicant.workHistory && applicant.workHistory[0].zip}
             type="number"
@@ -99,6 +104,7 @@ class WorkHistory extends Component {
             placeholder={"Zip"}
             onChange={this.inputChange}
           />
+          <Label>haha nigga</Label>
           <input
             value={applicant.workHistory && applicant.workHistory[0].phone}
             type="tel"
@@ -106,6 +112,7 @@ class WorkHistory extends Component {
             placeholder={"***-***-****"}
             onChange={this.inputChange}
           />
+          <Label>haha nigga</Label>
           <input
             value={applicant.workHistory && applicant.workHistory[0].position}
             type="text"
@@ -113,6 +120,7 @@ class WorkHistory extends Component {
             placeholder={"Position"}
             onChange={this.inputChange}
           />
+          <Label>haha nigga</Label>
           <input
             value={applicant.workHistory && applicant.workHistory[0].start}
             type="text"
@@ -120,6 +128,7 @@ class WorkHistory extends Component {
             placeholder={"Start Date"}
             onChange={this.inputChange}
           />
+          <Label>haha nigga</Label>
           <input
             value={applicant.workHistory && applicant.workHistory[0].end}
             type="text"
@@ -130,6 +139,7 @@ class WorkHistory extends Component {
         </form>
 
         <form onSubmit={this.formSubmit}>
+          <Label>haha nigga</Label>
           <input
             value={applicant.workHistory && applicant.workHistory[1].company}
             type="text"
@@ -137,6 +147,7 @@ class WorkHistory extends Component {
             placeholder={"Company"}
             onChange={this.inputChange}
           />
+          <Label>haha nigga</Label>
           <input
             value={applicant.workHistory && applicant.workHistory[1].street}
             type="text"
@@ -144,6 +155,7 @@ class WorkHistory extends Component {
             placeholder={"Street"}
             onChange={this.inputChange}
           />
+          <Label>haha nigga</Label>
           <input
             value={applicant.workHistory && applicant.workHistory[1].city}
             type="text"
@@ -151,6 +163,7 @@ class WorkHistory extends Component {
             placeholder={"City"}
             onChange={this.inputChange}
           />
+          <Label>haha nigga</Label>
           <input
             value={applicant.workHistory && applicant.workHistory[1].state}
             type="text"
@@ -158,6 +171,7 @@ class WorkHistory extends Component {
             placeholder={"State"}
             onChange={this.inputChange}
           />
+          <Label>haha nigga</Label>
           <input
             value={applicant.workHistory && applicant.workHistory[1].zip}
             type="number"
@@ -165,6 +179,7 @@ class WorkHistory extends Component {
             placeholder={"Zip"}
             onChange={this.inputChange}
           />
+          <Label>haha nigga</Label>
           <input
             value={applicant.workHistory && applicant.workHistory[1].phone}
             type="tel"
@@ -172,6 +187,7 @@ class WorkHistory extends Component {
             placeholder={"***-***-****"}
             onChange={this.inputChange}
           />
+          <Label>haha nigga</Label>
           <input
             value={applicant.workHistory && applicant.workHistory[1].position}
             type="text"
@@ -179,6 +195,7 @@ class WorkHistory extends Component {
             placeholder={"Position"}
             onChange={this.inputChange}
           />
+          <Label>haha nigga</Label>
           <input
             value={applicant.workHistory && applicant.workHistory[1].start}
             type="text"
@@ -186,6 +203,7 @@ class WorkHistory extends Component {
             placeholder={"Start Date"}
             onChange={this.inputChange}
           />
+          <Label>haha nigga</Label>
           <input
             value={applicant.workHistory && applicant.workHistory[1].end}
             type="text"
@@ -193,9 +211,11 @@ class WorkHistory extends Component {
             placeholder={"End Date"}
             onChange={this.inputChange}
           />
+          <Label>haha nigga</Label>
         </form>
 
         <form onSubmit={this.formSubmit}>
+          <Label>haha nigga</Label>
           <input
             value={applicant.workHistory && applicant.workHistory[2].company}
             type="text"
@@ -203,6 +223,7 @@ class WorkHistory extends Component {
             placeholder={"Company"}
             onChange={this.inputChange}
           />
+          <Label>haha nigga</Label>
           <input
             value={applicant.workHistory && applicant.workHistory[2].street}
             type="text"
@@ -210,6 +231,7 @@ class WorkHistory extends Component {
             placeholder={"Street"}
             onChange={this.inputChange}
           />
+          <Label>haha nigga</Label>
           <input
             value={applicant.workHistory && applicant.workHistory[2].city}
             type="text"
@@ -217,6 +239,7 @@ class WorkHistory extends Component {
             placeholder={"City"}
             onChange={this.inputChange}
           />
+          <Label>haha nigga</Label>
           <input
             value={applicant.workHistory && applicant.workHistory[2].state}
             type="text"
@@ -224,6 +247,7 @@ class WorkHistory extends Component {
             placeholder={"State"}
             onChange={this.inputChange}
           />
+          <Label>haha nigga</Label>
           <input
             value={applicant.workHistory && applicant.workHistory[2].zip}
             type="number"
@@ -231,6 +255,7 @@ class WorkHistory extends Component {
             placeholder={"Zip"}
             onChange={this.inputChange}
           />
+          <Label>haha nigga</Label>
           <input
             value={applicant.workHistory && applicant.workHistory[2].phone}
             type="tel"
@@ -238,6 +263,7 @@ class WorkHistory extends Component {
             placeholder={"***-***-****"}
             onChange={this.inputChange}
           />
+          <Label>haha nigga</Label>
           <input
             value={applicant.workHistory && applicant.workHistory[2].position}
             type="text"
@@ -245,6 +271,7 @@ class WorkHistory extends Component {
             placeholder={"Position"}
             onChange={this.inputChange}
           />
+          <Label>haha nigga</Label>
           <input
             value={applicant.workHistory && applicant.workHistory[2].start}
             type="text"
@@ -252,6 +279,7 @@ class WorkHistory extends Component {
             placeholder={"Start Date"}
             onChange={this.inputChange}
           />
+          <Label>haha nigga</Label>
           <input
             value={applicant.workHistory && applicant.workHistory[2].end}
             type="text"
@@ -259,7 +287,7 @@ class WorkHistory extends Component {
             placeholder={"End Date"}
             onChange={this.inputChange}
           />
-          <input type="submit" />
+          <SubmitButton type="submit" />
         </form>
       </div>
     );

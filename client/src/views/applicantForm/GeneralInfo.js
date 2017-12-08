@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import { TextInput, SubmitButton, Label } from "../../components";
 import applicantCrud from "../../crud";
 
 class GeneralInfo extends Component {
@@ -69,73 +69,73 @@ class GeneralInfo extends Component {
     return (
       <div>
         <form onSubmit={this.formSubmit}>
-          <label htmlFor="firstname">firstname: </label>
-          <input
+          <Label htmlFor="firstname">firstname: </Label>
+          <TextInput
             type={"text"}
             name={"firstname"}
             placeholder={"First Name"}
             onChange={this.inputChange}
           />
           <br />
-          <label htmlFor="lastname">lastname: </label>
-          <input
+          <Label htmlFor="lastname">lastname: </Label>
+          <TextInput
             type={"text"}
             name={"lastname"}
             placeholder={"Last Name"}
             onChange={this.inputChange}
           />
           <br />
-          <label htmlFor="street">street: </label>
-          <input
+          <Label htmlFor="street">street: </Label>
+          <TextInput
             type={"text"}
             name={"street"}
             placeholder={"Street Name"}
             onChange={this.inputChange}
           />
           <br />
-          <label htmlFor="city">city: </label>
-          <input
+          <Label htmlFor="city">city: </Label>
+          <TextInput
             type={"text"}
             name={"city"}
             placeholder={"City"}
             onChange={this.inputChange}
           />
           <br />
-          <label htmlFor="state">state: </label>
-          <input
+          <Label htmlFor="state">state: </Label>
+          <TextInput
             type={"text"}
             name={"state"}
             placeholder={"State"}
             onChange={this.inputChange}
           />
           <br />
-          <label htmlFor="zip">zip: </label>
-          <input
+          <Label htmlFor="zip">zip: </Label>
+          <TextInput
             type={"number"}
             name={"zip"}
             placeholder={"Zip Code"}
             onChange={this.inputChange}
           />
           <br />
-          <label htmlFor="phone">phone: </label>
-          <input
+          <Label htmlFor="phone">phone: </Label>
+          <TextInput
             type={"tel"}
             name={"phone"}
             placeholder={"***-***-****"}
             onChange={this.inputChange}
           />
           <br />
-          <label htmlFor="email">email: </label>
-          <input
+          <Label htmlFor="email">email: </Label>
+          <TextInput
             type={"email"}
             name={"email"}
             placeholder={"Email"}
             onChange={this.inputChange}
           />
           <br />
-          <label htmlFor="overeighteen">
+          <Label htmlFor="overeighteen">
             Are you 18 years of age or older?{" "}
-          </label>
+          </Label>
           <input
             value={"true"}
             type={"radio"}
@@ -151,7 +151,7 @@ class GeneralInfo extends Component {
           />{" "}
           No
           <br />
-          <input type={"submit"} />
+          <SubmitButton type={"submit"} />
         </form>
       </div>
     );
