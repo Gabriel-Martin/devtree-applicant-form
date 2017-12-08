@@ -1,7 +1,7 @@
-import React from "react";
+import TextInput from "./TextInput";
+import Label from "./Label";
+import TextArea from "./TextArea";
+import SubmitButton from "./SubmitButton";
+import Select from "./Select";
 
-const componentName = () => {
-  return <div />;
-};
-
-export default componentName;
+export { TextInput, Label, TextArea, SubmitButton, Select };

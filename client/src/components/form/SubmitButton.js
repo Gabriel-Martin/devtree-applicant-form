@@ -1,7 +1,7 @@
 import React from "react";
 
-const componentName = () => {
+const SubmitButton = () => {
   return <div />;
 };
 
-export default componentName;
+export default SubmitButton;

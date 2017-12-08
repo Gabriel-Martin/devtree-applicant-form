@@ -1,7 +1,7 @@
 import React from "react";
 
-const componentName = () => {
+const TextArea = () => {
   return <div />;
 };
 
-export default componentName;
+export default TextArea;

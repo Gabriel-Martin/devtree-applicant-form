@@ -1,7 +1,7 @@
 import React from "react";
 
-const componentName = () => {
+const Select = () => {
   return <div />;
 };
 
-export default componentName;
+export default Select;
