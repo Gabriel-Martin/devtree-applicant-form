@@ -14,8 +14,9 @@ class GeneralInfo extends Component {
   }
 
   submitApplicant = () => {
+    let { applicantId } = this.props.match.params;
     let { applicant } = this.state;
-    applicantCrud.create(applicant).then(res => {
+    applicantCrud.update(applicantId, applicant).then(res => {
       this.props.history.push(`/education/${res.id}`);
     });
   };
