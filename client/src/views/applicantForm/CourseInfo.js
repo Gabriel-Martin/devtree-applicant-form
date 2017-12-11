@@ -1,7 +1,7 @@
-import React, { Component } from "react";
 import applicantCrud from "../../crud";
-
-import { Label, Select, TextArea } from "../../components";
+import React, { Component } from "react";
+import { formStyles } from "../../styles";
+import { Label, Select, TextArea, SubmitButton } from "../../components";
 
 class CourseInfo extends Component {
   constructor(props) {
@@ -34,7 +34,7 @@ class CourseInfo extends Component {
     let { applicant } = this.state;
 
     applicantCrud.update(applicantId, applicant).then(data => {
-      // this.props.history.push(`/`);
+      this.props.history.push(`/thank-you`);
     });
   };
 
@@ -47,6 +47,8 @@ class CourseInfo extends Component {
   inputChange = changeE => {
     let name = changeE.target.name;
     let value = changeE.target.value;
+
+    console.log(name, value);
 
     changeE.persist();
 
@@ -63,24 +65,37 @@ class CourseInfo extends Component {
   render() {
     let { applicant } = this.state;
     return (
-      <div>
-        <form onSubmit={this.formSubmit}>
-          <Label for="codingexperience" text={"Coding Experience"} />
-          <br />
-          <TextArea
-            name={"codingexperience"}
-            onChange={this.inputChange}
-            value={applicant.codingexperience}
-            placeholder={"Coding Experience"}
-          />
-          <br />
-          <Label for="courseDates" text={"Preferred Course:"} />
-          <br />
-          <Select onChange={this.inputChange} name={"preferredcourse"} />
-          <br />
-
-          <input type={"submit"} />
-        </form>
+      <div style={formStyles.container}>
+        <div style={formStyles.wrapper}>
+          <div style={formStyles.h1}>
+            <h1>Course Info</h1>
+          </div>
+          <form style={formStyles.wrapper} onSubmit={this.formSubmit}>
+            <div style={formStyles.inputGroup}>
+              <div style={formStyles.groupItem}>
+                <Label for={"codingexperience"} text={"Coding Experience"} />
+                <TextArea
+                  rows={"10"}
+                  name={"codingexperience"}
+                  onChange={this.inputChange}
+                  value={applicant.codingexperience}
+                  placeholder={"Coding Experience"}
+                />
+              </div>
+            </div>
+            <div style={formStyles.inputGroup}>
+              <div style={formStyles.groupItem}>
+                <Label for={"preferredcourse"} text={"Preferred Course:"} />
+                <Select
+                  name={"preferredcourse"}
+                  onChange={this.inputChange}
+                  value={applicant.preferredcourse}
+                />
+              </div>
+            </div>
+            <SubmitButton />
+          </form>
+        </div>
       </div>
     );
   }

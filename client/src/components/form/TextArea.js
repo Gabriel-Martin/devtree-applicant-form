@@ -3,8 +3,9 @@ import React from "react";
 const TextArea = props => {
   return (
     <textarea
-      rows={"10"}
-      cols={"30"}
+      style={styles}
+      rows={props.rows}
+      cols={props.cols}
       name={props.name}
       value={props.value}
       onChange={props.onChange}
@@ -14,3 +15,11 @@ const TextArea = props => {
 };
 
 export default TextArea;
+
+const styles = {
+  fontSize: 24,
+  margin: "5px 2px",
+  borderRadius: "5px",
+  border: "1px solid rgb(240, 240, 240)",
+  boxShadow: "0px 0px 5px 2px rgb(240, 240, 240)"
+};

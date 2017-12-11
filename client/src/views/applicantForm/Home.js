@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import applicantCrud from "../../crud";
+import { Button } from "../../components";
 
 class Home extends Component {
   apply = () => {
@@ -10,10 +11,19 @@ class Home extends Component {
 
   render() {
     return (
-      <div>
-        <button onClick={this.apply}>Apply For Classes!</button>
+      <div style={styles}>
+        <div>
+          <Button label={"Apply For Classes"} onClick={this.apply} />
+        </div>
       </div>
     );
   }
 }
 export default Home;
+
+const styles = {
+  display: "flex",
+  height: "100vh",
+  justifyContent: "center",
+  alignItems: "center"
+};

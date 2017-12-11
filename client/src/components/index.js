@@ -1,3 +1,4 @@
 import { TextInput, Label, TextArea, SubmitButton, Select } from "./form";
+import Button from "./Button";
 
-export { TextInput, Label, TextArea, SubmitButton, Select };
+export { Button, TextInput, Label, TextArea, SubmitButton, Select };

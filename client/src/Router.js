@@ -29,6 +29,11 @@ class Router extends Component {
             path={"/course-info/:applicantId"}
             component={ApplicantForm.CourseInfo}
           />
+          <Route
+            exact
+            path={"/thank-you/"}
+            component={ApplicantForm.ThankYou}
+          />
         </div>
       </BrowserRouter>
     );

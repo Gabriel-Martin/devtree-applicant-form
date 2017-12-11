@@ -1,6 +1,7 @@
-import React, { Component } from "react";
-import { TextInput, SubmitButton, Label } from "../../components";
 import applicantCrud from "../../crud";
+import React, { Component } from "react";
+import { formStyles } from "../../styles";
+import { TextInput, SubmitButton, Label, Button } from "../../components";
 
 class GeneralInfo extends Component {
   constructor() {
@@ -64,95 +65,129 @@ class GeneralInfo extends Component {
   };
 
   render() {
-    let { applicant } = this.state;
-
     return (
-      <div>
-        <form onSubmit={this.formSubmit}>
-          <Label htmlFor="firstname">firstname: </Label>
-          <TextInput
-            type={"text"}
-            name={"firstname"}
-            placeholder={"First Name"}
-            onChange={this.inputChange}
-          />
-          <br />
-          <Label htmlFor="lastname">lastname: </Label>
-          <TextInput
-            type={"text"}
-            name={"lastname"}
-            placeholder={"Last Name"}
-            onChange={this.inputChange}
-          />
-          <br />
-          <Label htmlFor="street">street: </Label>
-          <TextInput
-            type={"text"}
-            name={"street"}
-            placeholder={"Street Name"}
-            onChange={this.inputChange}
-          />
-          <br />
-          <Label htmlFor="city">city: </Label>
-          <TextInput
-            type={"text"}
-            name={"city"}
-            placeholder={"City"}
-            onChange={this.inputChange}
-          />
-          <br />
-          <Label htmlFor="state">state: </Label>
-          <TextInput
-            type={"text"}
-            name={"state"}
-            placeholder={"State"}
-            onChange={this.inputChange}
-          />
-          <br />
-          <Label htmlFor="zip">zip: </Label>
-          <TextInput
-            type={"number"}
-            name={"zip"}
-            placeholder={"Zip Code"}
-            onChange={this.inputChange}
-          />
-          <br />
-          <Label htmlFor="phone">phone: </Label>
-          <TextInput
-            type={"tel"}
-            name={"phone"}
-            placeholder={"***-***-****"}
-            onChange={this.inputChange}
-          />
-          <br />
-          <Label htmlFor="email">email: </Label>
-          <TextInput
-            type={"email"}
-            name={"email"}
-            placeholder={"Email"}
-            onChange={this.inputChange}
-          />
-          <br />
-          <Label htmlFor="overeighteen">
-            Are you 18 years of age or older?{" "}
-          </Label>
-          <input
-            value={"true"}
-            type={"radio"}
-            name={"overEighteen"}
-            onChange={this.inputChange}
-          />{" "}
-          Yes
-          <input
-            value={"false"}
-            type={"radio"}
-            name={"overEighteen"}
-            onChange={this.inputChange}
-          />{" "}
-          No
-          <br />
-          <SubmitButton type={"submit"} />
-        </form>
+      <div style={formStyles.container}>
+        <div style={formStyles.wrapper}>
+          <div>
+            <h1 style={formStyles.h1}>General Info</h1>
+          </div>
+          <form style={formStyles.wrapper} onSubmit={this.formSubmit}>
+            {/* First and last name input group */}
+
+            <div style={formStyles.inputGroup}>
+              <div style={formStyles.groupItem}>
+                <Label for="firstname" text={"First Name:"} />
+                <TextInput
+                  type={"text"}
+                  name={"firstname"}
+                  placeholder={"First Name"}
+                  onChange={this.inputChange}
+                />
+              </div>
+              <div style={formStyles.groupItem}>
+                <Label for="lastname" text={"Last Name:"} />
+                <TextInput
+                  type={"text"}
+                  name={"lastname"}
+                  placeholder={"Last Name"}
+                  onChange={this.inputChange}
+                />
+              </div>
+            </div>
+
+            {/* Street input */}
+
+            <div style={formStyles.groupItem}>
+              <Label for="street" text={"Street:"} />
+              <TextInput
+                type={"text"}
+                name={"street"}
+                placeholder={"Street Name"}
+                onChange={this.inputChange}
+              />
+            </div>
+
+            {/* City State Zip input group */}
+
+            <div style={formStyles.inputGroup}>
+              <div style={formStyles.groupItem}>
+                <Label for="city" text={"City:"} />
+                <TextInput
+                  type={"text"}
+                  name={"city"}
+                  placeholder={"City"}
+                  onChange={this.inputChange}
+                />
+              </div>
+              <div style={formStyles.groupItem}>
+                <Label for="state" text={"State:"} />
+                <TextInput
+                  type={"text"}
+                  name={"state"}
+                  placeholder={"State"}
+                  onChange={this.inputChange}
+                />
+              </div>
+              <div style={formStyles.groupItem}>
+                <Label for="zip" text={"Zip Code:"} />
+                <TextInput
+                  type={"number"}
+                  name={"zip"}
+                  placeholder={"Zip Code"}
+                  onChange={this.inputChange}
+                />
+              </div>
+            </div>
+
+            {/* Phpne Email input group */}
+
+            <div style={formStyles.inputGroup}>
+              <div style={formStyles.groupItem}>
+                <Label for="phone" text={"Phone Number:"} />
+                <TextInput
+                  type={"tel"}
+                  name={"phone"}
+                  placeholder={"***-***-****"}
+                  onChange={this.inputChange}
+                />
+              </div>
+              <div style={formStyles.groupItem}>
+                <Label for="email" text={"Email:"} />
+                <TextInput
+                  type={"email"}
+                  name={"email"}
+                  placeholder={"Email"}
+                  onChange={this.inputChange}
+                />
+              </div>
+            </div>
+
+            {/* Over Eighteen input */}
+
+            <div style={formStyles.inputGroup}>
+              <Label for="overeighteen" text={"Are you 18 years or older?"} />
+              <input
+                value={"true"}
+                type={"radio"}
+                name={"overEighteen"}
+                onChange={this.inputChange}
+              />{" "}
+              Yes
+              <input
+                value={"false"}
+                type={"radio"}
+                name={"overEighteen"}
+                onChange={this.inputChange}
+              />{" "}
+              No
+            </div>
+            <div style={formStyles.inputGroup}>
+              <div style={formStyles.groupItem}>
+                <SubmitButton label={"Next >"} />
+              </div>
+            </div>
+          </form>
+        </div>
       </div>
     );
   }
